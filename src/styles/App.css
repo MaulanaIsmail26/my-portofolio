@@ -1,0 +1,288 @@
+/* *<---------- CUSTOM PROPERTY ---------->* */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+
+  /* *< COLORING >* */
+
+  /* GRADIENT COLOR */
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50% );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
+
+  /* SOLID COLOR */
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* *< END OF COLORING >* */
+
+  /* *< TYPOGRAPHY >* */
+
+  /* FONT-FAMILY */
+  --ff-poppins: 'Poppins', sans-serif;
+
+  /* FONT SIZE */
+  --fs-1: 32px;
+  --fs-2: 24px;
+  --fs-3: 26px;
+  --fs-4: 18px;
+  --fs-6: 15px;
+  --fs-7: 15px;
+  --fs-8: 12px;
+
+  /* FONT WEIGHT */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /* *< SHADOW >* */
+
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+  /* *< END OF SHADOW >* */
+
+  /* *< TRANSITION >* */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+
+  /* *< END OF TRANSITION >* */
+}
+
+/* *<---------- END OF CUSTOM PROPERTY ---------->* */
+
+
+
+/* *<---------- RESET ---------->* */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+/* img, ion-icon, a, button, time, span { display: block; } */
+
+/* button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+} */
+
+::selection {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+:focus { outline-color: var(--orange-yellow-crayola); }
+
+#portoPage { font-family: var(--ff-poppins); }
+
+#portoPage { background: var(--smoky-black); }
+
+/* *<---------- END OF RESET ---------->* */
+
+
+
+/* *<---------- MAIN CONTAINER ---------->* */
+
+#portoPage .mainContainer {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* *<---------- END OF MAIN CONTAINER ---------->* */
+
+
+
+/* *<---------- SECOND CONTAINER ---------->* */
+
+#portoPage .mainContainer .secondContainer {
+  padding: 60px 85px;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+}
+
+/* *<---------- END OF SECOND CONTAINER ---------->* */
+
+
+
+/* *<---------- PROFILE CONTACT SIDE ---------->* */
+
+#portoPage .mainContainer .secondContainer .sidebar {
+  padding: 0;
+  margin: 0;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card {
+  height: max-content;
+  padding: 60px 30px 15px 30px;
+  background-color: var(--eerie-black-2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--jet);
+}
+
+/* PROFILE SECTION */
+
+#portoPage .mainContainer .secondContainer .sidebar .card .profile {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .profile .profilePicture img {
+  /* width: 150px; */
+  width: 61%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 1px solid var(--jet);
+  margin-bottom: 25px;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .profile .infoPersonal .name {
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.25px;
+  margin-bottom: 15px;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .profile .infoPersonal .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 5px 19px;
+  border-radius: 8px;
+}
+
+/* CONTACT SECTION */
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact {
+  padding-top: 35px;
+  border-top: 1px solid var(--jet);
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .iconBox {
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  /* width: 100%; */
+  width: 42px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--jet);
+  background-color: var(--bg-gradient-onyx);
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .iconContact {
+  font-size: 20px;
+  color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .title {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .subTitle {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .subTitleLoc {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+}
+
+/* *<---------- END OF PROFILE CONTACT SIDE ---------->* */
+
+
+
+/* *\_______ RESPONSIVE FOR _______/ */
+/* *<----------- MOBILE -----------> */
+
+@media screen and (max-width:600px) {
+
+  /* *<---------- SECOND CONTAINER ---------->* */
+  #portoPage .mainContainer .secondContainer {
+  padding: 20px 30px;
+}
+  /* *<---------- END OF SECOND CONTAINER ---------->* */
+  
+  /* *<---------- PROFILE CONTACT SIDE ---------->* */
+  #portoPage .mainContainer .secondContainer .sidebar .card .contact {
+    display: none;
+  }
+  /* *<---------- END OF PROFILE CONTACT SIDE ---------->* */
+}
+
+/* *\_______ END OF RESPONSIVE FOR _______/ */
+/* *<--------------- MOBILE --------------> */
