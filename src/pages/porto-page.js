@@ -62,7 +62,7 @@ export default function portoPage() {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* phone number */}
                   <div className="row mb-3">
                     <div className="col-3">
@@ -110,7 +110,8 @@ export default function portoPage() {
                       <div>
                         <p className="title">GITHUB</p>
                         <Link
-                          to="https://github.com/MaulanaIsmail26" target="_blank"
+                          to="https://github.com/MaulanaIsmail26"
+                          target="_blank"
                           className="subTitle"
                         >
                           Maulana Ismail
@@ -139,6 +140,140 @@ export default function portoPage() {
               </div>
             </div>
             {/* END OF SIDE BAR */}
+
+            {/* MAIN SECTION */}
+            <div className="col-xl-9 ps-xl-4 mainContent">
+              <div className="card">
+                {/* NAVBAR */}
+                <div className="navbar d-flex justify-content-end">
+                  <ul className="d-flex justify-content-evenly">
+                    <li>About</li>
+                    <li>Resume</li>
+                    <li>Skill</li>
+                    <li>Portofolio</li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+                {/* END OF NAVBAR */}
+
+                {/* ABOUT */}
+                <div className="about">
+                  {/* HEADER */}
+                  <div className="header">
+                    <p className="title">About Me</p>
+                    <div className="underline"></div>
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="content">
+                    {/* about self */}
+                    <div className="aboutSelf">
+                      <p>
+                        I am a Web Developer from Sumedang, Indonesia. A
+                        graduate of a Vocational High School majoring in
+                        Computer Network Engineering and having passed the
+                        Fullstack Web Developer Bootcamp from Pijar Camp makes
+                        me happy to build functional, user-friendly and
+                        attractive websites.
+                      </p>
+                      <p>
+                        Enjoys learning new things, able to work individually or
+                        in a team, upholds discipline and honesty. I make sure
+                        to build your website to the fullest with the same
+                        abilities you have, so as to produce a website that
+                        attracts attention and is easy to use.
+                      </p>
+                    </div>
+
+                    {/* MY SERVICE */}
+                    <div className="service">
+                      {/* SUBTITLE */}
+                      <div className="subTitle">
+                        <p>My services</p>
+                      </div>
+
+                      {/* SERVICE LIST */}
+                      <div className="row p-0">
+                        {/* FULLSTACK SERVICE */}
+                        <div className="col-xl-6 serviceList">
+                          <div className="boxService">
+                            <div className="row">
+                              <div className="col-3 iconFullstack">
+                                <img
+                                  src={require("./../asset/images/fullstack dev.png")}
+                                  className="mx-auto d-block"
+                                  alt="fullstack-icon"
+                                ></img>
+                              </div>
+                              <div className="col-9 p-0 info">
+                                <h5 className="title">
+                                  Fullstack Web Developer
+                                </h5>
+                                <p className="explanation">
+                                  Build websites with secure and structured
+                                  backend code and an attractive and
+                                  user-friendly Frontend.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* FRONTEND SERVICE */}
+                        <div className="col-xl-6 serviceList">
+                          <div className="boxService">
+                            <div className="row">
+                              <div className="col-3 iconFrontend">
+                                <img
+                                  src={require("./../asset/images/frontend dev.png")}
+                                  className="mx-auto d-block"
+                                  alt="fullstack-icon"
+                                ></img>
+                              </div>
+                              <div className="col-9 p-0 info">
+                                <h5 className="title">
+                                  Frontend Web Developer
+                                </h5>
+                                <p className="explanation">
+                                  Build a website as a Frontend Web Developer
+                                  which will ensure an attractive and
+                                  user-friendly frontend.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* BACKEND SERVICE */}
+                        <div className="col-xl-6 serviceList">
+                          <div className="boxService">
+                            <div className="row">
+                              <div className="col-3 iconBackend">
+                                <img
+                                  src={require("./../asset/images/backend dev.png")}
+                                  className="mx-auto d-block"
+                                  alt="fullstack-icon"
+                                ></img>
+                              </div>
+                              <div className="col-9 p-0 info">
+                                <h5 className="title">Backend Web Developer</h5>
+                                <p className="explanation">
+                                  Build websites as a Backend Web Developer
+                                  which will ensure secure and structured code
+                                  on the backend side.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* END OF ABOUT */}
+              </div>
+            </div>
+            {/* END OF MAIN SECTION */}
           </div>
         </div>
       </div>

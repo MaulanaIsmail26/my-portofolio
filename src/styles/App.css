@@ -223,6 +223,7 @@ input, textarea {
 }
 
 #portoPage .mainContainer .secondContainer .sidebar .card .contact .iconBox {
+  position: relative;
   box-shadow: var(--shadow-1);
   border-radius: 10px;
   /* width: 100%; */
@@ -231,8 +232,17 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--jet);
-  background-color: var(--bg-gradient-onyx);
+  background: var(--border-gradient-onyx);
+  z-index: 1;
+}
+
+#portoPage .mainContainer .secondContainer .sidebar .card .contact .iconBox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 #portoPage .mainContainer .secondContainer .sidebar .card .contact .iconContact {
@@ -266,6 +276,132 @@ input, textarea {
 
 
 
+/* *<---------- MAIN CONTENT CARD ---------->* */
+
+#portoPage .mainContainer .secondContainer .mainContent {
+  padding: 0;
+  margin: 0;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card {
+  min-height: 783px;
+  background-color: var(--eerie-black-2);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--jet);
+  padding: 0;
+}
+
+/* *<---------- END OF MAIN CONTENT CARD ---------->* */
+
+/* *<---------- NAVBAR ---------->* */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar {
+  padding: 0;
+  z-index: 9999;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar ul {
+  width: 61%;
+  padding: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid var(--jet);
+  border-top: 0;
+  border-right: 0;
+  background: hsla(240, 1%, 17%, 0.75);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar li {
+  display: inline;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  padding: 20px 0;
+  transition: color var(--transition-1);
+  cursor: pointer;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar li:hover {
+  color: var(--light-gray-70);
+}
+
+/* *<---------- END OF NAVBAR ---------->* */
+
+
+
+/* *<---------- ABOUT ---------->* */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about {
+  margin-top: -80px;
+  padding: 30px 30px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .header .title {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .header .underline {
+  width: 5%;
+  height: 5px;
+  border-radius: 50px;
+  background: var(--text-gradient-yellow);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .aboutSelf {
+  color: var(--light-gray);
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: var(--fs-6);
+  line-height: 1.8;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .subTitle {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  color: var(--white-2);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .serviceList .boxService {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 30px 40px 30px 20px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .serviceList .boxService::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .serviceList .boxService .iconFullstack img, .iconFrontend img, .iconBackend img {
+  width: 70%;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .serviceList .boxService .info .title {
+  color: var(--white-2);
+  font-weight: var(--fw-600);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .about .content .service .serviceList .boxService .info .explanation {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  margin-bottom: 0;
+}
+
+/* *<---------- END OF ABOUT ---------->* */
+
+
+
 /* *\_______ RESPONSIVE FOR _______/ */
 /* *<----------- MOBILE -----------> */
 
@@ -273,9 +409,11 @@ input, textarea {
 
   /* *<---------- SECOND CONTAINER ---------->* */
   #portoPage .mainContainer .secondContainer {
-  padding: 20px 30px;
-}
+    padding: 20px 30px;
+  }
   /* *<---------- END OF SECOND CONTAINER ---------->* */
+
+  
   
   /* *<---------- PROFILE CONTACT SIDE ---------->* */
   #portoPage .mainContainer .secondContainer .sidebar .card .contact {
