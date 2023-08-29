@@ -14,7 +14,10 @@ import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import SendIcon from "@mui/icons-material/Send";
 import ContactsIcon from "@mui/icons-material/Contacts";
 
-export default function portoPage() {
+export default function PortoPage() {
+  const [about, setAbout] = React.useState(true);
+  const [resume, setResume] = React.useState(false);
+
   return (
     <div id="portoPage">
       <div className="container-fluid mainContainer d-flex justify-content-center clearfix">
@@ -147,8 +150,22 @@ export default function portoPage() {
                 {/* NAVBAR */}
                 <div className="navbar d-flex justify-content-end">
                   <ul className="d-flex justify-content-evenly">
-                    <li>About</li>
-                    <li>Resume</li>
+                    <li
+                      onClick={() => {
+                        setAbout(true);
+                        setResume(false);
+                      }}
+                    >
+                      About
+                    </li>
+                    <li
+                      onClick={() => {
+                        setAbout(false);
+                        setResume(true);
+                      }}
+                    >
+                      Resume
+                    </li>
                     <li>Skill</li>
                     <li>Portofolio</li>
                     <li>Contact</li>
@@ -157,111 +174,115 @@ export default function portoPage() {
                 {/* END OF NAVBAR */}
 
                 {/* ABOUT */}
-                <div className="about">
-                  {/* HEADER */}
-                  <div className="header">
-                    <p className="title">About Me</p>
-                    <div className="underline"></div>
-                  </div>
-
-                  {/* CONTENT */}
-                  <div className="content">
-                    {/* about self */}
-                    <div className="aboutSelf">
-                      <p>
-                        I am a Web Developer from Sumedang, Indonesia. A
-                        graduate of a Vocational High School majoring in
-                        Computer Network Engineering and having passed the
-                        Fullstack Web Developer Bootcamp from Pijar Camp makes
-                        me happy to build functional, user-friendly and
-                        attractive websites.
-                      </p>
-                      <p>
-                        Enjoys learning new things, able to work individually or
-                        in a team, upholds discipline and honesty. I make sure
-                        to build your website to the fullest with the same
-                        abilities you have, so as to produce a website that
-                        attracts attention and is easy to use.
-                      </p>
+                {about && (
+                  <div className="about">
+                    {/* HEADER */}
+                    <div className="header">
+                      <p className="title">About Me</p>
+                      <div className="underline"></div>
                     </div>
 
-                    {/* MY SERVICE */}
-                    <div className="service">
-                      {/* SUBTITLE */}
-                      <div className="subTitle">
-                        <p>My services</p>
+                    {/* CONTENT */}
+                    <div className="content">
+                      {/* about self */}
+                      <div className="aboutSelf">
+                        <p>
+                          I am a Web Developer from Sumedang, Indonesia. A
+                          graduate of a Vocational High School majoring in
+                          Computer Network Engineering and having passed the
+                          Fullstack Web Developer Bootcamp from Pijar Camp makes
+                          me happy to build functional, user-friendly and
+                          attractive websites.
+                        </p>
+                        <p>
+                          Enjoys learning new things, able to work individually
+                          or in a team, upholds discipline and honesty. I make
+                          sure to build your website to the fullest with the
+                          same abilities you have, so as to produce a website
+                          that attracts attention and is easy to use.
+                        </p>
                       </div>
 
-                      {/* SERVICE LIST */}
-                      <div className="row p-0">
-                        {/* FULLSTACK SERVICE */}
-                        <div className="col-xl-6 serviceList">
-                          <div className="boxService">
-                            <div className="row">
-                              <div className="col-3 iconFullstack">
-                                <img
-                                  src={require("./../asset/images/fullstack dev.png")}
-                                  className="mx-auto d-block"
-                                  alt="fullstack-icon"
-                                ></img>
-                              </div>
-                              <div className="col-9 p-0 info">
-                                <h5 className="title">
-                                  Fullstack Web Developer
-                                </h5>
-                                <p className="explanation">
-                                  Build websites with secure and structured
-                                  backend code and an attractive and
-                                  user-friendly Frontend.
-                                </p>
+                      {/* MY SERVICE */}
+                      <div className="service">
+                        {/* SUBTITLE */}
+                        <div className="subTitle">
+                          <p>My services</p>
+                        </div>
+
+                        {/* SERVICE LIST */}
+                        <div className="row p-0">
+                          {/* FULLSTACK SERVICE */}
+                          <div className="col-xl-6 serviceList">
+                            <div className="boxService">
+                              <div className="row">
+                                <div className="col-3 iconFullstack">
+                                  <img
+                                    src={require("./../asset/images/fullstack dev.png")}
+                                    className="mx-auto d-block"
+                                    alt="fullstack-icon"
+                                  ></img>
+                                </div>
+                                <div className="col-9 p-0 info">
+                                  <h5 className="title">
+                                    Fullstack Web Developer
+                                  </h5>
+                                  <p className="explanation">
+                                    Build websites with secure and structured
+                                    backend code and an attractive and
+                                    user-friendly Frontend.
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        {/* FRONTEND SERVICE */}
-                        <div className="col-xl-6 serviceList">
-                          <div className="boxService">
-                            <div className="row">
-                              <div className="col-3 iconFrontend">
-                                <img
-                                  src={require("./../asset/images/frontend dev.png")}
-                                  className="mx-auto d-block"
-                                  alt="fullstack-icon"
-                                ></img>
-                              </div>
-                              <div className="col-9 p-0 info">
-                                <h5 className="title">
-                                  Frontend Web Developer
-                                </h5>
-                                <p className="explanation">
-                                  Build a website as a Frontend Web Developer
-                                  which will ensure an attractive and
-                                  user-friendly frontend.
-                                </p>
+                          {/* FRONTEND SERVICE */}
+                          <div className="col-xl-6 serviceList">
+                            <div className="boxService">
+                              <div className="row">
+                                <div className="col-3 iconFrontend">
+                                  <img
+                                    src={require("./../asset/images/frontend dev.png")}
+                                    className="mx-auto d-block"
+                                    alt="fullstack-icon"
+                                  ></img>
+                                </div>
+                                <div className="col-9 p-0 info">
+                                  <h5 className="title">
+                                    Frontend Web Developer
+                                  </h5>
+                                  <p className="explanation">
+                                    Build a website as a Frontend Web Developer
+                                    which will ensure an attractive and
+                                    user-friendly frontend.
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        {/* BACKEND SERVICE */}
-                        <div className="col-xl-6 serviceList">
-                          <div className="boxService">
-                            <div className="row">
-                              <div className="col-3 iconBackend">
-                                <img
-                                  src={require("./../asset/images/backend dev.png")}
-                                  className="mx-auto d-block"
-                                  alt="fullstack-icon"
-                                ></img>
-                              </div>
-                              <div className="col-9 p-0 info">
-                                <h5 className="title">Backend Web Developer</h5>
-                                <p className="explanation">
-                                  Build websites as a Backend Web Developer
-                                  which will ensure secure and structured code
-                                  on the backend side.
-                                </p>
+                          {/* BACKEND SERVICE */}
+                          <div className="col-xl-6 serviceList">
+                            <div className="boxService">
+                              <div className="row">
+                                <div className="col-3 iconBackend">
+                                  <img
+                                    src={require("./../asset/images/backend dev.png")}
+                                    className="mx-auto d-block"
+                                    alt="fullstack-icon"
+                                  ></img>
+                                </div>
+                                <div className="col-9 p-0 info">
+                                  <h5 className="title">
+                                    Backend Web Developer
+                                  </h5>
+                                  <p className="explanation">
+                                    Build websites as a Backend Web Developer
+                                    which will ensure secure and structured code
+                                    on the backend side.
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -269,8 +290,85 @@ export default function portoPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                )}
                 {/* END OF ABOUT */}
+
+                {/* RESUME */}
+                {resume && (
+                  <div className="resume">
+                    {/* HEADER */}
+                    <div className="header">
+                      <p className="title">Resume</p>
+                      <div className="underline"></div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="content">
+                      {/* EDUCATION */}
+                      <div className="educationList">
+                        <div className="row">
+                          <div className="col-12">
+                            {/* SUBTITLE */}
+                            <div className="subTitle d-flex align-items-center">
+                              <div className="iconBox">
+                                <SchoolOutlinedIcon className="iconEducation" />
+                              </div>
+                              <p className="my-auto">Education</p>
+                            </div>
+                            <div className="education">
+                              <div class="eduBox">
+                                <div className="info">
+                                  <p class="schoolName">
+                                    {
+                                      "Bootcamp by Pijar Camp (Fullstack Web Developer)"
+                                    }
+                                  </p>
+                                  <p className="year">
+                                    Nov 2022 - Feb 2023
+                                  </p>
+                                  <p className="text">
+                                    Nemo enims ipsam voluptatem, blanditiis
+                                    praesentium voluptum delenit atque corrupti,
+                                    quos dolores et quas molestias exceptur.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="eduBox">
+                                <div className="info">
+                                  <p class="schoolName">
+                                    {
+                                      "Vocational School (Computer network Engineering)"
+                                    }
+                                  </p>
+                                  <p className="year">2019 - 2022</p>
+                                  <p className="text">
+                                    Nemo enims ipsam voluptatem, blanditiis
+                                    praesentium voluptum delenit atque corrupti,
+                                    quos dolores et quas molestias exceptur.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="eduBox">
+                                <div className="info">
+                                  <p class="schoolName">
+                                    Ganeas 1 Junior High School
+                                  </p>
+                                  <p className="year">2016 - 2019</p>
+                                  <p className="text">
+                                    Nemo enims ipsam voluptatem, blanditiis
+                                    praesentium voluptum delenit atque corrupti,
+                                    quos dolores et quas molestias exceptur.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* END OF RESUME */}
               </div>
             </div>
             {/* END OF MAIN SECTION */}
