@@ -537,6 +537,135 @@ input, textarea {
 
 
 
+/* *<---------- SKILL ---------->* */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill {
+  margin-top: -80px;
+  padding: 30px 30px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .header .title {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .header .underline {
+  width: 5%;
+  height: 5px;
+  border-radius: 50px;
+  background: var(--text-gradient-yellow);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content {
+  padding-top: 30px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox {
+  position: relative;
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  width: 100%;
+  /* width: 120px; */
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background: var(--border-gradient-onyx);
+  z-index: 1;
+  padding-top: 30px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(12) .iconBox::after {
+  content: "Under Study";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gray-70);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-4);
+  inset: 1px;
+  background: linear-gradient(135deg, rgba(32, 32, 34, 1), rgba(32, 32, 34, 0.3));
+  border-radius: inherit;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(12) .iconBox:hover::after {
+  color: var(--light-gray);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(1) .iconBox {
+  padding-top: 35px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(6) .iconBox {
+  padding-top: 40px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(8) .iconBox {
+  padding-top: 20px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox img {
+  width: 60%;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(1) .iconBox img {
+  width: 48%;
+  aspect-ratio: inherit;
+  margin-bottom: 15px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(8) .iconBox img {
+  width: 65%;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(6) .iconBox img {
+  aspect-ratio: inherit;
+  margin-bottom: 18px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .col-sm-3:nth-child(12) .iconBox img {
+  width: 80%;
+  aspect-ratio: inherit;
+  margin-bottom: 15px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox:hover img {
+  transform: scale(1.1);
+  transition: var(--transition-1);
+
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .skill .content .iconBox p {
+  font-size: var(--fs-6);
+  color: var(--white-2);
+  font-weight: var(--fw-600);
+  margin-bottom: 0;
+}
+
+/* *<---------- END OF SKILL ---------->* */
+
+
+
 /* *\_______ RESPONSIVE FOR _______/ */
 /* *<----------- MOBILE -----------> */
 

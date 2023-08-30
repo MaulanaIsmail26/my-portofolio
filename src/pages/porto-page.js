@@ -17,6 +17,7 @@ import ContactsIcon from "@mui/icons-material/Contacts";
 export default function PortoPage() {
   const [about, setAbout] = React.useState(true);
   const [resume, setResume] = React.useState(false);
+  const [skill, setSkill] = React.useState(false);
 
   return (
     <div id="portoPage">
@@ -154,6 +155,7 @@ export default function PortoPage() {
                       onClick={() => {
                         setAbout(true);
                         setResume(false);
+                        setSkill(false);
                       }}
                     >
                       About
@@ -162,11 +164,20 @@ export default function PortoPage() {
                       onClick={() => {
                         setAbout(false);
                         setResume(true);
+                        setSkill(false);
                       }}
                     >
                       Resume
                     </li>
-                    <li>Skill</li>
+                    <li
+                      onClick={() => {
+                        setAbout(false);
+                        setResume(false);
+                        setSkill(true);
+                      }}
+                    >
+                      Skill
+                    </li>
                     <li>Portofolio</li>
                     <li>Contact</li>
                   </ul>
@@ -323,9 +334,7 @@ export default function PortoPage() {
                                       "Bootcamp by Pijar Camp (Fullstack Web Developer)"
                                     }
                                   </p>
-                                  <p className="year">
-                                    Nov 2022 - Feb 2023
-                                  </p>
+                                  <p className="year">Nov 2022 - Feb 2023</p>
                                   <p className="text">
                                     Nemo enims ipsam voluptatem, blanditiis
                                     praesentium voluptum delenit atque corrupti,
@@ -369,6 +378,169 @@ export default function PortoPage() {
                   </div>
                 )}
                 {/* END OF RESUME */}
+
+                {/* SKILL */}
+                {skill && (
+                  <div className="skill">
+                    {/* HEADER */}
+                    <div className="header">
+                      <p className="title">My Skill</p>
+                      <div className="underline"></div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="content">
+                      {/* SKILL */}
+                      <div className="row skillList">
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/html.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">HTML</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/css.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">CSS</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/js.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Javascript</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/react.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">React.Js</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/next.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Next.Js</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/bootstrap.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Bootstrap 5</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/materialUi.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Material UI</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/sass.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Sass</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/nodeJs.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Node.Js</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/express.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Express.Js</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/postgreSql.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">PostgreSql</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-sm-3 col-6">
+                          <div className="iconBox mb-4">
+                            <div>
+                              <img
+                                src={require("./../asset/images/typescript.webp")}
+                                className="mx-auto d-block iconSkill"
+                                alt="profile_picture"
+                              ></img>
+                              <p className="text-center">Typescript</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* END OF SKILL */}
               </div>
             </div>
             {/* END OF MAIN SECTION */}
