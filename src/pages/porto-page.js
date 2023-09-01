@@ -3,8 +3,13 @@ import React from "react";
 import "./../styles/App.css";
 import { Link } from "react-router-dom";
 
+// IMPORT COMPONENT
+import FoodRecipe from "../components/molecules/porto_foodRecipe";
+import LinkPocket from "../components/molecules/porto_linkPocket";
+import Blanja from "../components/molecules/porto_blanja";
+import Tickitz from "../components/molecules/porto_tickitz";
+
 // IMPORT MATERIAL UI
-// material ui icon
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -13,11 +18,14 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import SendIcon from "@mui/icons-material/Send";
 import ContactsIcon from "@mui/icons-material/Contacts";
+import InfoIcon from "@mui/icons-material/Info";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 export default function PortoPage() {
   const [about, setAbout] = React.useState(true);
   const [resume, setResume] = React.useState(false);
   const [skill, setSkill] = React.useState(false);
+  const [portfolio, setPortfolio] = React.useState(false);
 
   return (
     <div id="portoPage">
@@ -156,6 +164,7 @@ export default function PortoPage() {
                         setAbout(true);
                         setResume(false);
                         setSkill(false);
+                        setPortfolio(false);
                       }}
                     >
                       About
@@ -165,6 +174,7 @@ export default function PortoPage() {
                         setAbout(false);
                         setResume(true);
                         setSkill(false);
+                        setPortfolio(false);
                       }}
                     >
                       Resume
@@ -174,11 +184,21 @@ export default function PortoPage() {
                         setAbout(false);
                         setResume(false);
                         setSkill(true);
+                        setPortfolio(false);
                       }}
                     >
                       Skill
                     </li>
-                    <li>Portofolio</li>
+                    <li
+                      onClick={() => {
+                        setAbout(false);
+                        setResume(false);
+                        setSkill(false);
+                        setPortfolio(true);
+                      }}
+                    >
+                      Portfolio
+                    </li>
                     <li>Contact</li>
                   </ul>
                 </div>
@@ -541,12 +561,54 @@ export default function PortoPage() {
                   </div>
                 )}
                 {/* END OF SKILL */}
+
+                {/* PORTFOLIO */}
+                {portfolio && (
+                  <div className="portofolio">
+                    {/* HEADER */}
+                    <div className="header">
+                      <p className="title">Portfolio</p>
+                      <div className="underline"></div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="content">
+                      <div className="row">
+                        <div className="col-xl-4 col-12">
+                          <FoodRecipe />
+                        </div>
+                        <div className="col-xl-4 col-12">
+                          <LinkPocket />
+                        </div>
+                        <div className="col-xl-4 col-12">
+                          <Blanja />
+                        </div>
+                        <div className="col-xl-4 col-12">
+                          <Tickitz />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* END OF PORTFOLIO */}
               </div>
             </div>
             {/* END OF MAIN SECTION */}
           </div>
         </div>
       </div>
+      {/* STYLE FOR SCROLLBAR */}
+      <style>
+        {`
+          ::-webkit-scrollbar {
+            width: 0em;
+            height: 0.5em;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        `}
+      </style>
     </div>
   );
 }
