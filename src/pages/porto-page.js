@@ -753,7 +753,7 @@ export default function PortoPage() {
                               <input
                                 type="hidden"
                                 name="_next"
-                                value="http://localhost:3000/message-sent"
+                                value="https://maulana-ismail-portfolio.vercel.app/email-sent"
                               />
 
                               <div className="col-12 p-0 d-flex justify-content-end">
