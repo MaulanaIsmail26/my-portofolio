@@ -12,7 +12,7 @@ function App() {
       element: <PortoPage />,
     },
     {
-      path: "/message-sent",
+      path: "/email-sent",
       element: <MessageSent />,
     },
   ]);
