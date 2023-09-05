@@ -158,6 +158,7 @@ input, textarea {
   height: 100vh;
   overflow: auto;
   margin: 0;
+  width: 100vw;
 }
 
 /* *<---------- END OF SECOND CONTAINER ---------->* */
@@ -909,6 +910,276 @@ input, textarea {
 }
 
 /* *<---------- END OF PORTFOLIO ---------->* */
+
+
+
+/* *<---------- CONTACT ---------->* */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact {
+  margin-top: -80px;
+  padding: 30px 30px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .header .title {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .header .underline {
+  width: 5%;
+  height: 5px;
+  border-radius: 50px;
+  background: var(--text-gradient-yellow);
+}
+
+/* CONTENT */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content {
+  padding-top: 30px;
+}
+
+/* CONTACT-1 VIA WHATSAPP AND TELEGRAM */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 {
+  border-bottom: 1px solid var(--light-gray-70);
+}
+
+/* WHATSAPP */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp {
+  border-right: 2px solid var(--onyx);
+  padding-bottom: 15px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconBox {
+  position: relative;
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  /* width: 100%; */
+  width: 42px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-gradient-onyx);
+  z-index: 1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconBox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconContact {
+  font-size: 25px;
+  color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconBox:hover .iconContact {
+  color: #25D366;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .contactName p {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin: 0 10px 0 0;
+}
+
+/* TELEGRAM */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram {
+  border-left: 2px solid var(--onyx);
+  padding-bottom: 15px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconBox {
+  position: relative;
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  /* width: 100%; */
+  width: 42px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-gradient-onyx);
+  z-index: 1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconBox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconContact {
+  font-size: 25px;
+  color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconBox:hover .iconContact {
+  color: #229ED9;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .contactName p {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin: 0 0 0 10px;
+}
+
+/* NUMBER */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .number .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 5px 19px;
+  border-radius: 8px;
+}
+
+/* BUTTON TO SEND MESSAGE */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-whatsapp {
+  border-right: 2px solid var(--onyx);
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-whatsapp .btn {
+  background-color: var(--orange-yellow-crayola);
+  border: 1px solid var(--orange-yellow-crayola);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  color: var(--smoky-black);
+  padding: 5px;
+  width: 130px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-5);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-whatsapp .btn:hover {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-whatsapp .btn .sendIcon {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-telegram {
+  border-left: 2px solid var(--onyx);
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-telegram .btn {
+  background-color: var(--orange-yellow-crayola);
+  border: 1px solid var(--orange-yellow-crayola);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  color: var(--smoky-black);
+  padding: 5px 0;
+  width: 130px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-5);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-telegram .btn:hover {
+  background-color: #229ED9;
+  border-color: #229ED9;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .btn-telegram .btn .sendIcon {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: -4px;
+}
+
+/* CONTACT-2 VIA EMAIL AUTOMATIC */
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 {
+  background-color: transparent;
+  margin-top: -17px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .orText p {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 5px 13px;
+  background-color: var(--eerie-black-2);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .input {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 15px 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  background-color: var(--eerie-black-2);
+  outline: none;
+  box-shadow: var(--shadow-1);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .message-form {
+  min-height: 170px;
+  height: 170px;
+  max-height: 250px;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .message-form::-webkit-resizer { display: none; }
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .input:focus {
+  border-color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .input:focus:invalid {
+  border-color: var(--bittersweet-shimmer);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .btn-submit {
+  background-color: var(--bg-gradient-jet);
+  border: 1px solid var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  padding: 13px 20px;
+  width: max-content;
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+  color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .btn-submit:hover {
+  background-color: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  font-weight: var(--fw-500);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .btn-submit .sendIcon {
+  margin-right: 4px;
+  margin-top: -7px;
+  font-size: 20px;
+  transform: rotate(-40deg)
+}
+
+/* *<---------- END OF CONTACT ---------->* */
 
 
 
