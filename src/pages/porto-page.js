@@ -18,14 +18,32 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import SendIcon from "@mui/icons-material/Send";
 import ContactsIcon from "@mui/icons-material/Contacts";
-import InfoIcon from "@mui/icons-material/Info";
-import VisibilityIcon from "@mui/icons-material/Visibility";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 export default function PortoPage() {
   const [about, setAbout] = React.useState(true);
   const [resume, setResume] = React.useState(false);
   const [skill, setSkill] = React.useState(false);
   const [portfolio, setPortfolio] = React.useState(false);
+  const [contact, setContact] = React.useState(false);
+  const [sentName, setSentName] = React.useState("")
+
+  // HANDLE ADD IS MESSAGE SENT
+  const handleMessageSent = () => {
+    localStorage.setItem("messageSent", "true");
+    localStorage.setItem("sentName", sentName);
+  }
+
+  // DELETED LOCAL STORAGE AUTOMATIC 
+  React.useEffect(() => {
+    const messageSent = localStorage.getItem("messageSent");
+    const sentName = localStorage.getItem("sentName");
+
+    if (messageSent && sentName) {
+      localStorage.clear();
+    }
+  });
 
   return (
     <div id="portoPage">
@@ -165,6 +183,7 @@ export default function PortoPage() {
                         setResume(false);
                         setSkill(false);
                         setPortfolio(false);
+                        setContact(false);
                       }}
                     >
                       About
@@ -175,6 +194,7 @@ export default function PortoPage() {
                         setResume(true);
                         setSkill(false);
                         setPortfolio(false);
+                        setContact(false);
                       }}
                     >
                       Resume
@@ -185,6 +205,7 @@ export default function PortoPage() {
                         setResume(false);
                         setSkill(true);
                         setPortfolio(false);
+                        setContact(false);
                       }}
                     >
                       Skill
@@ -195,11 +216,22 @@ export default function PortoPage() {
                         setResume(false);
                         setSkill(false);
                         setPortfolio(true);
+                        setContact(false);
                       }}
                     >
                       Portfolio
                     </li>
-                    <li>Contact</li>
+                    <li
+                      onClick={() => {
+                        setAbout(false);
+                        setResume(false);
+                        setSkill(false);
+                        setPortfolio(false);
+                        setContact(true);
+                      }}
+                    >
+                      Contact
+                    </li>
                   </ul>
                 </div>
                 {/* END OF NAVBAR */}
@@ -591,6 +623,159 @@ export default function PortoPage() {
                   </div>
                 )}
                 {/* END OF PORTFOLIO */}
+
+                {/* CONTACT */}
+                {contact && (
+                  <div className="contact">
+                    {/* HEADER */}
+                    <div className="header">
+                      <p className="title">Contact</p>
+                      <div className="underline"></div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="content">
+                      {/* CONTACT VIA WHATSAPP AND TELEGRAM */}
+                      <div className="row contact-1 m-0">
+                        <div className="col-6 whatsapp pe-3">
+                          <div className="contactName d-flex justify-content-end">
+                            <p>WhatsApp</p>
+                            <div className="iconBox">
+                              <WhatsAppIcon className="iconContact" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-6 telegram ps-3">
+                          <div className="contactName d-flex justify-content-start">
+                            <div className="iconBox">
+                              <TelegramIcon className="iconContact" />
+                            </div>
+                            <p>Telegram</p>
+                          </div>
+                        </div>
+                        <div className="col-12 number">
+                          <p className="mx-auto title mb-0">
+                            +62 851 5784 4290
+                          </p>
+                        </div>
+                        <div className="col-6 btn-whatsapp pe-3 d-flex justify-content-end">
+                          <Link
+                            type="button"
+                            className="btn d-flex align-items-center justify-content-center"
+                            to="https://wa.me/6285157844290"
+                            target="_blank"
+                          >
+                            Contact me
+                            <WhatsAppIcon className="sendIcon" />
+                          </Link>
+                        </div>
+                        <div className="col-6 btn-telegram ps-3 d-flex justify-content-start">
+                          <Link
+                            type="button"
+                            className="btn d-flex align-items-center justify-content-center"
+                            to="https://t.me/+6285157844290"
+                            target="_blank"
+                          >
+                            <TelegramIcon className="sendIcon" />
+                            Contact me
+                          </Link>
+                        </div>
+                      </div>
+
+                      {/* CONTACT VIA EMAIL AUTOMATIC */}
+                      <div className="row contact-2 mx-0">
+                        <div className="orText d-flex justify-content-center">
+                          <p>Or</p>
+                        </div>
+                        <div className="p-0 contact-form">
+                          <form
+                            className="form p-0"
+                            action="https://formsubmit.co/maulanaismail3466@gmail.com"
+                            method="POST"
+                          >
+                            <div className="row m-0">
+                              <div className="col-xl-6 p-0 pe-xl-3 col-12 mb-xl-0 mb-4">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  className="w-100 input"
+                                  placeholder="Your Name"
+                                  required
+                                  onChange={(e) => {
+                                    setSentName(e.target.value);
+                                  }}
+                                />
+                              </div>
+                              <div className="col-xl-6 p-0 ps-xl-3 col-12 mb-4">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  className="w-100 input"
+                                  placeholder="Your Email Address"
+                                  required
+                                />
+                              </div>
+                              <div className="col-12 p-0 mb-4">
+                                <input
+                                  type="text"
+                                  name="_subject"
+                                  // value="New submission!"
+                                  className="w-100 input"
+                                  placeholder="Your Subject"
+                                  required
+                                />
+                              </div>
+                              <div className="col-12 p-0 mb-xl-1">
+                                <textarea
+                                  placeholder="Your Message"
+                                  className="input message-form w-100"
+                                  name="message"
+                                  required
+                                />
+                              </div>
+
+                              {/* SETTING FORMSUBMIT TO HANDLE SUBMIT CONTACT FORM */}
+                              <input
+                                type="hidden"
+                                name="_captcha"
+                                value="false"
+                              />
+                              <input
+                                type="hidden"
+                                name="_autoresponse"
+                                value="your custom message"
+                              />
+                              <input
+                                type="hidden"
+                                name="_template"
+                                value="table"
+                              />
+                              <input
+                                type="hidden"
+                                name="_next"
+                                value="http://localhost:3000/message-sent"
+                              />
+
+                              <div className="col-12 p-0 d-flex justify-content-end">
+                                <button
+                                  type="submit"
+                                  className="btn btn-submit d-flex align-items-center"
+                                  onClick={() => {
+                                    handleMessageSent();
+                                  }}
+                                >
+                                  <SendIcon className="sendIcon" />
+                                  Send Message
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* END OF CONTACT */}
               </div>
             </div>
             {/* END OF MAIN SECTION */}
