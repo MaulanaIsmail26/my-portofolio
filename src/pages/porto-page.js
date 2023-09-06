@@ -55,19 +55,163 @@ export default function PortoPage() {
               <div className="card">
                 {/* PROFILE SECTION */}
                 <div className="profile">
-                  {/* photo profile */}
-                  <div className="profilePicture">
-                    <img
-                      src={require("./../asset/images/profile-picture-v1.webp")}
-                      class="mx-auto d-block"
-                      alt="profile_picture"
-                    ></img>
+                  <div className="row p-0">
+                    {/* photo profile */}
+                    <div className="col-xl-12 col-4">
+                      <div className="profilePicture">
+                        <img
+                          src={require("./../asset/images/profile-picture-v1.webp")}
+                          className="mx-auto d-block"
+                          alt="profile_picture"
+                        ></img>
+                      </div>
+                    </div>
+                    {/* name and job */}
+                    <div className="col-xl-12 col-8 profile-mobile ps-1">
+                      <div className="infoPersonal">
+                        <h1 className="text-sm-center name">Maulana Ismail</h1>
+                        <p className="mx-xl-auto title">
+                          Fullstack Web Developer
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                </div>
 
-                  {/* name and job */}
-                  <div className="infoPersonal">
-                    <h1 className="text-sm-center name">Maulana Ismail</h1>
-                    <p className="mx-auto title">Fullstack Web Developer</p>
+                {/* BUTTON MODAL CONTACT FOR MOBILE VIEW */}
+                <button
+                  type="button"
+                  className="btn btn-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  <ContactsIcon className="iconContact" />
+                </button>
+
+                {/* CONTENT MODAL CONTACT FOR MOBILE VIEW */}
+                <div
+                  className="modal fade"
+                  id="contactModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h1 className="modal-title fs-5" id="exampleModalLabel">
+                          Maulana Ismail
+                        </h1>
+                        <button
+                          type="button"
+                          className="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          style={{
+                            backgroundColor: "white",
+                            borderRadius: "10px",
+                          }}
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        {/* CONTACT SECTION FOR MOBILE VIEW */}
+                        <div className="contact">
+                          {/* email */}
+                          <div className="row" style={{ marginBottom: "30px" }}>
+                            <div className="col-2">
+                              <div className="iconBox">
+                                <MailOutlineIcon className="iconContact" />
+                              </div>
+                            </div>
+                            <div className="col-10 ps-3">
+                              <div>
+                                <p className="title">EMAIL</p>
+                                <Link
+                                  to="mailto:maulanaismail3466@gmail.com"
+                                  className="subTitle"
+                                >
+                                  maulanaismail3466@gmail.com
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* phone number */}
+                          <div className="row mb-3">
+                            <div className="col-2">
+                              <div className="iconBox">
+                                <SmartphoneIcon className="iconContact" />
+                              </div>
+                            </div>
+                            <div className="col-10 ps-3">
+                              <div>
+                                <p className="title">PHONE</p>
+                                <p className="subTitle">+62 851 5784 4290</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* linked in */}
+                          <div className="row" style={{ marginBottom: "30px" }}>
+                            <div className="col-2">
+                              <div className="iconBox">
+                                <LinkedInIcon className="iconContact" />
+                              </div>
+                            </div>
+                            <div className="col-10 ps-3">
+                              <div>
+                                <p className="title">LINKED IN</p>
+                                <Link
+                                  to="https://www.linkedin.com/in/maulana-ismail/"
+                                  target="_blank"
+                                  className="subTitle"
+                                >
+                                  Maulana Ismail
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* github */}
+                          <div className="row" style={{ marginBottom: "30px" }}>
+                            <div className="col-2">
+                              <div className="iconBox">
+                                <GitHubIcon className="iconContact" />
+                              </div>
+                            </div>
+                            <div className="col-10 ps-3">
+                              <div>
+                                <p className="title">GITHUB</p>
+                                <Link
+                                  to="https://github.com/MaulanaIsmail26"
+                                  target="_blank"
+                                  className="subTitle"
+                                >
+                                  Maulana Ismail
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* location */}
+                          <div className="row mb-3">
+                            <div className="col-2 pt-1">
+                              <div className="iconBox">
+                                <LocationOnOutlinedIcon className="iconContact" />
+                              </div>
+                            </div>
+                            <div className="col-10 ps-3">
+                              <div>
+                                <p className="title">LOCATION</p>
+                                <p className="subTitleLoc m-0">
+                                  Kab. Sumedang, Jawa Barat, Indonesia
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 

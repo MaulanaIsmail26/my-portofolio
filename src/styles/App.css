@@ -216,6 +216,10 @@ input, textarea {
   border-radius: 8px;
 }
 
+#portoPage .mainContainer .secondContainer .sidebar .card .btn-modal {
+  display: none;
+}
+
 /* CONTACT SECTION */
 
 #portoPage .mainContainer .secondContainer .sidebar .card .contact {
@@ -1194,6 +1198,149 @@ input, textarea {
 /* *<----------- MOBILE -----------> */
 
 @media screen and (max-width:600px) {
+
+  /* *<---------- PROFILE CONTACT SIDE ---------->* */
+  #portoPage .mainContainer .secondContainer .sidebar .card {
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile {
+    padding-bottom: 0;
+  }
+
+  
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile .col-xl-12:nth-child(1) {
+    padding: 0;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile .profilePicture img {
+    width: 80%;
+    margin-bottom: 0;
+    border-radius: 20px;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile .profile-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile .infoPersonal .name {
+    font-size: 23px;
+    margin-bottom: 13px;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .profile .infoPersonal .title {
+    font-size: 10px;
+    margin-bottom: 0;
+    padding: 5px 15px;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .btn-modal {
+    display: flex;
+    width: max-content;
+    padding: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    aspect-ratio: 1/1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    border: 1px solid var(--jet);
+    border-top: 0;
+    border-right: 0;
+    z-index: 1;
+    box-shadow: var(--shadow-1);
+    background: var(--smoky-black);
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .btn-modal:hover {
+    background: var(--bg-gradient-yellow-2);
+    border-color: var(--vegas-gold);
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .btn-modal .iconContact {
+    font-size: 18px;
+    color: var(--orange-yellow-crayola);
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .fade {
+    padding: 10px 5px;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content {
+    background-color: var(--eerie-black-2);
+    color: var(--white-2);
+    padding: 0 10px 10px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-1);
+  }
+
+  /* CONTACT SECTION FOR MOBILE VIEW */
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-header {
+    border-color: var(--light-gray);
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact {
+    padding-top: 5px;
+    border-top: 0;
+    display: inline-block;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .iconBox {
+    position: relative;
+    box-shadow: var(--shadow-1);
+    border-radius: 10px;
+    /* width: 100%; */
+    width: 42px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--border-gradient-onyx);
+    z-index: 1;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .iconBox::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--eerie-black-1);
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .iconContact {
+    font-size: 20px;
+    color: var(--orange-yellow-crayola);
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .title {
+    color: var(--light-gray-70);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .subTitle {
+    color: var(--white-2);
+    font-size: var(--fs-7);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }
+
+  #portoPage .mainContainer .secondContainer .sidebar .card .modal-content .modal-body .contact .subTitleLoc {
+    color: var(--white-2);
+    font-size: var(--fs-7);
+  }
+
 
   /* *<---------- SECOND CONTAINER ---------->* */
   #portoPage .mainContainer .secondContainer {
