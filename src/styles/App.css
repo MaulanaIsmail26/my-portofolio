@@ -315,7 +315,6 @@ input, textarea {
 
 #portoPage .mainContainer .secondContainer .mainContent .card .navbar li {
   display: inline;
-  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   padding: 20px 0;
@@ -323,7 +322,15 @@ input, textarea {
   cursor: pointer;
 }
 
-#portoPage .mainContainer .secondContainer .mainContent .card .navbar li:hover {
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar .active {
+  color: var(--orange-yellow-crayola);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar .not-active {
+  color: var(--light-gray);
+}
+
+#portoPage .mainContainer .secondContainer .mainContent .card .navbar .not-active:hover {
   color: var(--light-gray-70);
 }
 
