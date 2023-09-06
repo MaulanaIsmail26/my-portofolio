@@ -27,15 +27,15 @@ export default function PortoPage() {
   const [skill, setSkill] = React.useState(false);
   const [portfolio, setPortfolio] = React.useState(false);
   const [contact, setContact] = React.useState(false);
-  const [sentName, setSentName] = React.useState("")
+  const [sentName, setSentName] = React.useState("");
 
   // HANDLE ADD IS MESSAGE SENT
   const handleMessageSent = () => {
     localStorage.setItem("messageSent", "true");
     localStorage.setItem("sentName", sentName);
-  }
+  };
 
-  // DELETED LOCAL STORAGE AUTOMATIC 
+  // DELETED LOCAL STORAGE AUTOMATIC
   React.useEffect(() => {
     const messageSent = localStorage.getItem("messageSent");
     const sentName = localStorage.getItem("sentName");
@@ -178,6 +178,7 @@ export default function PortoPage() {
                 <div className="navbar d-flex justify-content-end">
                   <ul className="d-flex justify-content-evenly">
                     <li
+                      className={about ? "active" : "not-active"}
                       onClick={() => {
                         setAbout(true);
                         setResume(false);
@@ -189,6 +190,7 @@ export default function PortoPage() {
                       About
                     </li>
                     <li
+                      className={resume ? "active" : "not-active"}
                       onClick={() => {
                         setAbout(false);
                         setResume(true);
@@ -200,6 +202,7 @@ export default function PortoPage() {
                       Resume
                     </li>
                     <li
+                      className={skill ? "active" : "not-active"}
                       onClick={() => {
                         setAbout(false);
                         setResume(false);
@@ -211,6 +214,7 @@ export default function PortoPage() {
                       Skill
                     </li>
                     <li
+                      className={portfolio ? "active" : "not-active"}
                       onClick={() => {
                         setAbout(false);
                         setResume(false);
@@ -222,6 +226,7 @@ export default function PortoPage() {
                       Portfolio
                     </li>
                     <li
+                      className={contact ? "active" : "not-active"}
                       onClick={() => {
                         setAbout(false);
                         setResume(false);
