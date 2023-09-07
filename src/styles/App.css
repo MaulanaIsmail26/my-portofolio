@@ -1440,6 +1440,31 @@ input, textarea {
     width: 60%;
     transition: var(--transition-1);
   }
+
+
+  /* *<---------- PORTFOLIO ---------->* */
+  #portoPage .mainContainer .secondContainer .mainContent .card .portofolio {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .header .title {
+    font-size: var(--fs-3);
+    margin-bottom: 8px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .header .underline {
+    width: 40px;
+    height: 4px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .content {
+    padding-top: 18px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .content .portoBox .button .fade {
+    padding: 10px 5px;
+  }
 }
 
 /* *\_______ END OF RESPONSIVE FOR _______/ */
