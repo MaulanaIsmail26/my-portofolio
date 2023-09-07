@@ -1502,7 +1502,7 @@ input, textarea {
   #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .contactName p {
     font-size: 20px;
     text-align: center;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 0;
   }
 
   #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconBox {
@@ -1518,7 +1518,7 @@ input, textarea {
   #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .contactName p {
     font-size: 20px;
     text-align: center;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
