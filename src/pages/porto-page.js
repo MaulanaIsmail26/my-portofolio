@@ -595,145 +595,169 @@ export default function PortoPage() {
                       <div className="row skillList">
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/html.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">HTML</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/html.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">HTML</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/css.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">CSS</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/css.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">CSS</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/js.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Javascript</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/js.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Javascript</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/react.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">React.Js</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/react.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">React.Js</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/next.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Next.Js</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/next.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Next.Js</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/bootstrap.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Bootstrap 5</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/bootstrap.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Bootstrap</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/materialUi.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Material UI</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/materialUi.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Material UI</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
                           <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/sass.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Sass</p>
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/sass.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Sass</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
-                          <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/nodeJs.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Node.Js</p>
+                          <div className="iconBox mb-xl-0 mb-4">
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/nodeJs.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Node.Js</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
-                          <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/express.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Express.Js</p>
+                          <div className="iconBox mb-xl-0 mb-4">
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/express.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Express.Js</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
-                          <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/postgreSql.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">PostgreSql</p>
+                          <div className="iconBox mb-xl-0 mb-1">
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/postgreSql.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">PostgreSql</p>
                             </div>
                           </div>
                         </div>
                         <div className="col-sm-3 col-6">
-                          <div className="iconBox mb-4">
-                            <div>
-                              <img
-                                src={require("./../asset/images/typescript.webp")}
-                                className="mx-auto d-block iconSkill"
-                                alt="profile_picture"
-                              ></img>
-                              <p className="text-center">Typescript</p>
+                          <div className="iconBox mb-xl-0 mb-1">
+                            <div className="p-0">
+                              <div className="p-0 d-flex mobile-view align-items-center">
+                                <img
+                                  src={require("./../asset/images/typescript.webp")}
+                                  className="mx-auto d-block iconSkill"
+                                  alt="profile_picture"
+                                />
+                              </div>
+                              <p className="text-center pt-2">Typescript</p>
                             </div>
                           </div>
                         </div>
