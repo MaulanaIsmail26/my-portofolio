@@ -1341,6 +1341,30 @@ input, textarea {
     font-size: var(--fs-7);
   }
 
+  /* *<---------- NAVBAR ---------->* */
+  #portoPage .mainContainer .secondContainer .mainContent .card .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .navbar ul {
+    margin-bottom: 0;
+    width: 100vw;
+    border-radius: 20px 20px 0 0;
+    border: 1px 1px 0 1px;
+    border: 1px solid var(--jet);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: var(--shadow-1);
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .navbar li {
+    font-size: var(--fs-8);
+    padding: 20px 0;
+  }
+
 
   /* *<---------- SECOND CONTAINER ---------->* */
   #portoPage .mainContainer .secondContainer {
