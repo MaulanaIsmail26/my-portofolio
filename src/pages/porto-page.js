@@ -811,15 +811,21 @@ export default function PortoPage() {
                       {/* CONTACT VIA WHATSAPP AND TELEGRAM */}
                       <div className="row contact-1 m-0">
                         <div className="col-6 whatsapp pe-3">
-                          <div className="contactName d-flex justify-content-end">
+                          <div className="contactName d-xl-flex d-none justify-content-end">
                             <p>WhatsApp</p>
                             <div className="iconBox">
                               <WhatsAppIcon className="iconContact" />
                             </div>
                           </div>
+                          <div className="contactName d-xl-none d-block">
+                            <div className="iconBox">
+                              <WhatsAppIcon className="iconContact" />
+                            </div>
+                            <p>WhatsApp</p>
+                          </div>
                         </div>
                         <div className="col-6 telegram ps-3">
-                          <div className="contactName d-flex justify-content-start">
+                          <div className="contactName d-xl-flex justify-content-xl-start">
                             <div className="iconBox">
                               <TelegramIcon className="iconContact" />
                             </div>

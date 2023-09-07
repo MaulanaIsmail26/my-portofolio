@@ -1465,6 +1465,61 @@ input, textarea {
   #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .content .portoBox .button .fade {
     padding: 10px 5px;
   }
+
+
+  /* *<---------- CONTACT ---------->* */
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .header .title {
+    font-size: var(--fs-3);
+    margin-bottom: 8px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .header .underline {
+    width: 40px;
+    height: 4px;
+  }
+
+  /* CONTENT */
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content {
+    padding-top: 18px;
+  }
+
+  /* CONTACT-1 VIA WHATSAPP AND TELEGRAM */
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconBox {
+    width: 50px;
+    margin: auto;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .iconContact {
+    font-size: 30px;
+    color: var(--orange-yellow-crayola);
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .whatsapp .contactName p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconBox {
+    width: 50px;
+    margin: auto;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .iconContact {
+    font-size: 30px;
+    color: var(--orange-yellow-crayola);
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-1 .telegram .contactName p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+  }
 }
 
 /* *\_______ END OF RESPONSIVE FOR _______/ */
