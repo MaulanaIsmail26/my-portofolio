@@ -837,7 +837,7 @@ export default function PortoPage() {
                             +62 851 5784 4290
                           </p>
                         </div>
-                        <div className="col-6 btn-whatsapp pe-3 d-flex justify-content-end">
+                        <div className="col-6 btn-whatsapp pe-3 d-flex justify-content-xl-end justify-content-center">
                           <Link
                             type="button"
                             className="btn d-flex align-items-center justify-content-center"
@@ -848,7 +848,7 @@ export default function PortoPage() {
                             <WhatsAppIcon className="sendIcon" />
                           </Link>
                         </div>
-                        <div className="col-6 btn-telegram ps-3 d-flex justify-content-start">
+                        <div className="col-6 btn-telegram ps-3 d-flex justify-content-xl-start justify-content-center">
                           <Link
                             type="button"
                             className="btn d-flex align-items-center justify-content-center"
