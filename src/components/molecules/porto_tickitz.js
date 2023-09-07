@@ -10,7 +10,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 export default function Tickitz() {
   return (
     <div>
-      <div className="portoBox" style={{ marginBottom: "0" }}>
+      <div className="portoBox mb-xl-0 mb-2">
         {/* WEB PICTURE */}
         <div className="picture">
           <img
