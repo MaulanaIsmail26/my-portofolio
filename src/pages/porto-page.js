@@ -399,7 +399,7 @@ export default function PortoPage() {
                       {/* about self */}
                       <div className="aboutSelf">
                         <p>
-                          I am a Web Developer from Sumedang, Indonesia. A
+                          I&#39;m a Web Developer from Sumedang, Indonesia. A
                           graduate of a Vocational High School majoring in
                           Computer Network Engineering and having passed the
                           Fullstack Web Developer Bootcamp from Pijar Camp makes
@@ -428,18 +428,18 @@ export default function PortoPage() {
                           <div className="col-xl-6 serviceList">
                             <div className="boxService">
                               <div className="row">
-                                <div className="col-3 iconFullstack">
+                                <div className="col-xl-3 col-12 iconFullstack">
                                   <img
                                     src={require("./../asset/images/fullstack dev.png")}
                                     className="mx-auto d-block"
                                     alt="fullstack-icon"
                                   ></img>
                                 </div>
-                                <div className="col-9 p-0 info">
-                                  <h5 className="title">
+                                <div className="col-xl-9 col-12 p-0 info">
+                                  <h5 className="title text-xl-start text-center">
                                     Fullstack Web Developer
                                   </h5>
-                                  <p className="explanation">
+                                  <p className="explanation text-xl-start text-center">
                                     Build websites with secure and structured
                                     backend code and an attractive and
                                     user-friendly Frontend.
@@ -453,18 +453,18 @@ export default function PortoPage() {
                           <div className="col-xl-6 serviceList">
                             <div className="boxService">
                               <div className="row">
-                                <div className="col-3 iconFrontend">
+                                <div className="col-xl-3 col-12 iconFrontend">
                                   <img
                                     src={require("./../asset/images/frontend dev.png")}
                                     className="mx-auto d-block"
                                     alt="fullstack-icon"
                                   ></img>
                                 </div>
-                                <div className="col-9 p-0 info">
-                                  <h5 className="title">
+                                <div className="col-xl-9 col-12 p-0 info">
+                                  <h5 className="title text-xl-start text-center">
                                     Frontend Web Developer
                                   </h5>
-                                  <p className="explanation">
+                                  <p className="explanation text-xl-start text-center">
                                     Build a website as a Frontend Web Developer
                                     which will ensure an attractive and
                                     user-friendly frontend.
@@ -478,18 +478,18 @@ export default function PortoPage() {
                           <div className="col-xl-6 serviceList">
                             <div className="boxService">
                               <div className="row">
-                                <div className="col-3 iconBackend">
+                                <div className="col-xl-3 col-12 iconBackend">
                                   <img
                                     src={require("./../asset/images/backend dev.png")}
                                     className="mx-auto d-block"
                                     alt="fullstack-icon"
                                   ></img>
                                 </div>
-                                <div className="col-9 p-0 info">
-                                  <h5 className="title">
+                                <div className="col-xl-9 col-12 p-0 info">
+                                  <h5 className="title text-xl-start text-center">
                                     Backend Web Developer
                                   </h5>
-                                  <p className="explanation">
+                                  <p className="explanation text-xl-start text-center">
                                     Build websites as a Backend Web Developer
                                     which will ensure secure and structured code
                                     on the backend side.
