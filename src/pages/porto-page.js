@@ -28,6 +28,10 @@ export default function PortoPage() {
   const [portfolio, setPortfolio] = React.useState(false);
   const [contact, setContact] = React.useState(false);
   const [sentName, setSentName] = React.useState("");
+  const [fullName, setFullName] = React.useState(false);
+  const [email, setEmail] = React.useState(false);
+  const [subject, setSubject] = React.useState(false);
+  const [message, setMessage] = React.useState(false);
 
   // HANDLE ADD IS MESSAGE SENT
   const handleMessageSent = () => {
@@ -43,7 +47,7 @@ export default function PortoPage() {
     if (messageSent && sentName) {
       localStorage.clear();
     }
-  });
+  }, []);
 
   return (
     <div id="portoPage">
@@ -882,6 +886,11 @@ export default function PortoPage() {
                                   required
                                   onChange={(e) => {
                                     setSentName(e.target.value);
+                                    if (e.target.value !== "") {
+                                      setFullName(true);
+                                    } else {
+                                      setFullName(false);
+                                    }
                                   }}
                                 />
                               </div>
@@ -892,16 +901,29 @@ export default function PortoPage() {
                                   className="w-100 input"
                                   placeholder="Your Email Address"
                                   required
+                                  onChange={(e) => {
+                                    if (e.target.value !== "") {
+                                      setEmail(true);
+                                    } else {
+                                      setEmail(false);
+                                    }
+                                  }}
                                 />
                               </div>
                               <div className="col-12 p-0 mb-4">
                                 <input
                                   type="text"
                                   name="_subject"
-                                  // value="New submission!"
                                   className="w-100 input"
                                   placeholder="Your Subject"
                                   required
+                                  onChange={(e) => {
+                                    if (e.target.value !== "") {
+                                      setSubject(true);
+                                    } else {
+                                      setSubject(false);
+                                    }
+                                  }}
                                 />
                               </div>
                               <div className="col-12 p-0 mb-xl-1">
@@ -910,6 +932,13 @@ export default function PortoPage() {
                                   className="input message-form w-100"
                                   name="message"
                                   required
+                                  onChange={(e) => {
+                                    if (e.target.value !== "") {
+                                      setMessage(true);
+                                    } else {
+                                      setMessage(false);
+                                    }
+                                  }}
                                 />
                               </div>
 
@@ -942,6 +971,9 @@ export default function PortoPage() {
                                   onClick={() => {
                                     handleMessageSent();
                                   }}
+                                  disabled={
+                                    fullName + email + subject + message !== 4
+                                  }
                                 >
                                   <SendIcon className="sendIcon" />
                                   Send Message

@@ -1154,6 +1154,11 @@ input, textarea {
   color: var(--orange-yellow-crayola);
 }
 
+#portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .btn-submit:disabled {
+  opacity: 0.7;
+  cursor: no-drop;
+}
+
 #portoPage .mainContainer .secondContainer .mainContent .card .contact .content .contact-2 .contact-form .form .btn-submit:hover {
   background-color: var(--orange-yellow-crayola);
   color: var(--smoky-black);
