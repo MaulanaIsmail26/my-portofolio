@@ -440,13 +440,13 @@ input, textarea {
   margin-top: 40px;
   margin-bottom: 35px;
   margin-left: 24px;
-  border-left: 2px solid var(--jet);
-  height: 80px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .subTitle {
   margin-top: -10px;
   z-index: 1;
+  height: 85px;
+  border-left: 2px solid var(--jet);
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .subTitle .iconBox {
@@ -483,30 +483,28 @@ input, textarea {
   margin-left: 15px;
   font-size: var(--fs-2);
   font-weight: var(--fw-600);
+  margin-top: 7px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education {
-  margin-top: 25px;
+  margin-top: -10px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox {
   padding: 0;
   border-left: 2px solid var(--jet);
-  margin-left: -2px;
   padding-bottom: 15px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox:nth-child(3) {
   padding: 0;
   border-left: 0;
-  margin-left: -2px;
   padding-bottom: 15px;
   margin-top: -8px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox:nth-child(3) .info {
   margin-left: 42px;
-
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .info {
@@ -1413,6 +1411,59 @@ input, textarea {
     color: var(--white-2);
     font-size: 16px;
     font-weight: var(--fw-600);
+  }
+
+
+  /* *<---------- RESUME ---------->* */
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .header .title {
+    font-size: var(--fs-3);
+    margin-bottom: 8px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .header .underline {
+    width: 40px;
+    height: 4px;
+    background: var(--text-gradient-yellow);
+  }
+
+  /* EDUCATION */
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList {
+    margin-top: 28px;
+    margin-bottom: 35px;
+    margin-left: 24px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .subTitle p {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .schoolName {
+    margin-bottom: 5px;
+    font-size: var(--fs-6);
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .year {
+    font-size: var(--fs-6);
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .text {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox:nth-child(3) {
+    padding-bottom: 0;
+  }
+
+  #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox:nth-child(3) .text {
+    margin-bottom: 0;
   }
 
 

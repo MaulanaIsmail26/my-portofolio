@@ -525,11 +525,11 @@ export default function PortoPage() {
                         <div className="row">
                           <div className="col-12">
                             {/* SUBTITLE */}
-                            <div className="subTitle d-flex align-items-center">
+                            <div className="subTitle d-flex align-items-start">
                               <div className="iconBox">
                                 <SchoolOutlinedIcon className="iconEducation" />
                               </div>
-                              <p className="my-auto">Education</p>
+                              <p>Education</p>
                             </div>
                             <div className="education">
                               <div class="eduBox">
@@ -541,9 +541,11 @@ export default function PortoPage() {
                                   </p>
                                   <p className="year">Nov 2022 - Feb 2023</p>
                                   <p className="text">
-                                    Nemo enims ipsam voluptatem, blanditiis
-                                    praesentium voluptum delenit atque corrupti,
-                                    quos dolores et quas molestias exceptur.
+                                    Bootcamp at Pijar Camp, I learned HTML, CSS,
+                                    Bootstrap, Javascript, React.Js, Next.js,
+                                    Node.js, Express.js, Database with
+                                    PostgreSql, as well as learning soft skills
+                                    needed in the work environment.
                                   </p>
                                 </div>
                               </div>
@@ -551,14 +553,16 @@ export default function PortoPage() {
                                 <div className="info">
                                   <p class="schoolName">
                                     {
-                                      "Vocational School (Computer network Engineering)"
+                                      "Vocational School (Computer Network Engineering)"
                                     }
                                   </p>
                                   <p className="year">2019 - 2022</p>
                                   <p className="text">
-                                    Nemo enims ipsam voluptatem, blanditiis
-                                    praesentium voluptum delenit atque corrupti,
-                                    quos dolores et quas molestias exceptur.
+                                    Learn the basics of using a computer, learn
+                                    basic networks and proxies which are
+                                    hardware devices for managing network
+                                    traffic so that it is better and safer to
+                                    use.
                                   </p>
                                 </div>
                               </div>
@@ -569,9 +573,9 @@ export default function PortoPage() {
                                   </p>
                                   <p className="year">2016 - 2019</p>
                                   <p className="text">
-                                    Nemo enims ipsam voluptatem, blanditiis
-                                    praesentium voluptum delenit atque corrupti,
-                                    quos dolores et quas molestias exceptur.
+                                    Forming personal character, learning to be
+                                    independent, responsible, honest and always
+                                    trying to be confident.
                                   </p>
                                 </div>
                               </div>
