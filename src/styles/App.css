@@ -1450,7 +1450,7 @@ input, textarea {
   }
 
   #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .year {
-    font-size: var(--fs-6);
+    font-size: 14px;
   }
 
   #portoPage .mainContainer .secondContainer .mainContent .card .resume .content .educationList .education .eduBox .text {
