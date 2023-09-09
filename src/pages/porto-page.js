@@ -49,6 +49,11 @@ export default function PortoPage() {
     }
   }, []);
 
+  // HANDLE TO TOP PAGE
+  const handleToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div id="portoPage">
       <div className="container-fluid mainContainer d-flex justify-content-center clearfix">
@@ -333,6 +338,7 @@ export default function PortoPage() {
                         setSkill(false);
                         setPortfolio(false);
                         setContact(false);
+                        handleToTop();
                       }}
                     >
                       About
@@ -345,6 +351,7 @@ export default function PortoPage() {
                         setSkill(false);
                         setPortfolio(false);
                         setContact(false);
+                        handleToTop();
                       }}
                     >
                       Resume
@@ -357,6 +364,7 @@ export default function PortoPage() {
                         setSkill(true);
                         setPortfolio(false);
                         setContact(false);
+                        handleToTop();
                       }}
                     >
                       Skill
@@ -369,6 +377,7 @@ export default function PortoPage() {
                         setSkill(false);
                         setPortfolio(true);
                         setContact(false);
+                        handleToTop();
                       }}
                     >
                       Portfolio
@@ -381,6 +390,7 @@ export default function PortoPage() {
                         setSkill(false);
                         setPortfolio(false);
                         setContact(true);
+                        handleToTop();
                       }}
                     >
                       Contact
@@ -423,7 +433,7 @@ export default function PortoPage() {
                       <div className="service">
                         {/* SUBTITLE */}
                         <div className="subTitle">
-                          <p>My services</p>
+                          <p>My Services</p>
                         </div>
 
                         {/* SERVICE LIST */}
