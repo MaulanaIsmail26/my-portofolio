@@ -131,7 +131,7 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-#portoPage { font-family: var(--ff-poppins); }
+#portoPage { font-family: var(--ff-poppins); scroll-behavior: smooth; }
 
 #portoPage { background: var(--smoky-black); }
 
@@ -780,6 +780,7 @@ input, textarea {
 
 #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .content .portoBox .button .modal-content .modal-header {
   border-color: var(--jet);
+  padding-right: 22px;
 }
 
 #portoPage .mainContainer .secondContainer .mainContent .card .portofolio .content .portoBox .button .modal-content .modal-footer {
