@@ -546,7 +546,7 @@ export default function PortoPage() {
                                 <div className="info">
                                   <p class="schoolName">
                                     {
-                                      "Bootcamp by Pijar Camp (Fullstack Web Developer)"
+                                      "Bootcamp from Pijar Camp (Fullstack Web Developer)"
                                     }
                                   </p>
                                   <p className="year">Nov 2022 - Feb 2023</p>
