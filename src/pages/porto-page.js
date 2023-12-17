@@ -413,19 +413,20 @@ export default function PortoPage() {
                       {/* about self */}
                       <div className="aboutSelf">
                         <p>
-                          I&#39;m a Web Developer from Sumedang, Indonesia. A
-                          graduate of a Vocational High School majoring in
-                          Computer Network Engineering and having passed the
-                          Fullstack Web Developer Bootcamp from Pijar Camp makes
-                          me happy to build functional, user-friendly and
-                          attractive websites.
+                          I&#39;m a Frontend Website Developer from Sumedang
+                          Regency, West Java. graduate of Situraja State
+                          Vocational School majoring in Computer Network
+                          Engineering and graduate of the Fullstack Website
+                          Developer Bootcamp class. As a Frontend Web Developer,
+                          I succeeded in creating 5 websites with 2 team
+                          projects and 3 individual projects.
                         </p>
                         <p>
-                          Enjoys learning new things, able to work individually
-                          or in a team, upholds discipline and honesty. I make
-                          sure to build your website to the fullest with the
-                          same abilities you have, so as to produce a website
-                          that attracts attention and is easy to use.
+                          I&#39;m someone who can work in a team or
+                          individually, likes to learn new things, upholds
+                          honesty and discipline. I will always maximize my
+                          abilities to create websites that are responsive,
+                          attractive and easy to use.
                         </p>
                       </div>
 
